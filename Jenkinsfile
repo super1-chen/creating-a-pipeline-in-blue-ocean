@@ -12,12 +12,6 @@ pipeline {
       }
     }
     stage('Test') {
-      agent {
-        docker {
-          image 'none'
-        }
-
-      }
       environment {
         CI = 'true'
       }
